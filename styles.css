@@ -19,7 +19,7 @@ header {
 }
 
 h1 a {
-	color: lightgray;
+	color: royalblue;
 	font-family: "Noto Serif", serif;
 	font-size: 35px;
 	font-weight: 700;
@@ -30,20 +30,26 @@ h2 {
 	text-align: left;
 	font-size: 28px;
 	margin-top: 25px;
-	margin-bottom: 8px;
 	font-family: Barlow, serif;
 }
 
 h3 {
 	text-align: left;
 	font-size: 24px;
-	margin-bottom: 8px;
+	font-family: Barlow, serif;
+}
+
+h4 {
+	text-align: left;
+	font-size: 20px;
+	margin-top: 8px;
 	font-family: Barlow, serif;
 }
 
 p {
 	text-align: left;
 	font-size: 16px;
+	margin-top: 8px;
 	font-family: "Noto Serif", serif;
 }
 
@@ -62,9 +68,38 @@ ul {
 	padding-left: 15px;
 }
 
+ol {
+	list-style-position: outside;
+	padding-left: 15px;
+}
+
 li {
 	font-size: 16px;
 	font-family: "Noto Serif", serif;
+}
+
+table, th, td {
+	border: 1px solid;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 8px;
+	margin-bottom: 4px;
+}
+
+th, td {
+	padding: 8px;
+	font-size: 16px;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center th, .center td {
+	text-align: center;
 }
 
 .emphasis {
@@ -100,12 +135,18 @@ li {
 	padding: 0px 15%;
 }
 
-.role {
+.block {
 	display: flex;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-right: 15%;
 	margin-left: 15%;
+}
+
+.block h2 {
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .multi-top {
@@ -123,7 +164,7 @@ li {
 
 .details {
 	flex: 2;
-	background-color: #333333;
+	background-color: #202020;
 	padding: 8px 12px;
 }
 
@@ -132,14 +173,14 @@ li {
 	padding: 8px 12px;
 }
 
-.multi-top .details, .context {
+.multi-top .details, .multi-top .context {
 	padding: 8px 12px 0px 12px;
 }
 
-.multi-mid .details, .context {
+.multi-mid .details, .multi-mid .context {
 	padding: 0px 12px 8px 12px;
 }
 
-.multi-bot .details, .context {
+.multi-bot .details, .multi-bot .context {
 	padding: 0px 12px 8px 12px;
 }

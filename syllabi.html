@@ -16,19 +16,427 @@
 			<nav>
 				<ul class="nav_links">
 					<li><a href=teaching.html>Overview</a></li>
-					<li><a href="#">Teaching Philosophy</a></li>
+					<li><a href="tstatement.html">Teaching Philosophy</a></li>
 					<li class="active"><a href="syllabi.html">Sample Syllabus</a></li>
 					<li><a href="materials.html">Course Materials</a></li>
-					<li><a href="test">Student Feedback</a></li>
+					<li><a href="evals.html">Student Feedback</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main>
-			<div style="text-align: center;">
-				<img src="images/flash.jpg" alt="Flash, California Kingsnake" width="300" height="225">
+
+			<div class="text">
+
+				<h2>Sample Syllabus</h2>
+
+				<p>I developed this syllabus for a new computer engineering project I instructed as part of the introductory course The Art of Engineering at Columbia. Below, I have provided annotations highlighting some of the underlying pedagogical motivations, and key changes I have made to the syllabus over the years. <a target="_blank" href="Syllabus_AoE_CE.pdf">Here is the original PDF.</a></p>
+
 			</div>
-			<p style="text-align: center;">This is a work in progress. Stay tuned as I develop my teaching portfolio!</p>
+
+			<div class="block">
+
+				<div class="details">
+					<h2 class="emphasis">Art of Engineering: CE / CS Project<br>Simulation of a Very Simple Microprocessor Core</h2>
+				</div>
+
+				<div class="context">
+					
+				</div>
+				
+			</div>
+
+			<div class="block multi-top">
+
+				<div class="details">
+					<h3 class="emphasis">Introduction</h3>
+				</div>
+
+				<div class="context">
+					
+				</div>
+				
+			</div>
+
+			<div class="block multi-mid">
+
+				<div class="details">
+
+					<p>In this project, we will explore some of the main tools and techniques of computer engineering to implement a simulation of a very simple microprocessor, using <a href="http://www.cburch.com/logisim/">Logisim</a>. Computer engineering is an exciting field at the intersection of hardware and software design, and in this project, you will get to experience a little of each. We will also employ two classic design principles used in computer engineering: abstraction and design hierarchy. By the completion of the project, you will get a taste of...</p>
+
+					<ul>
+						<li>the way computer engineers <em>analyze</em> systems.</li>
+						<li>the types of <em>design</em> problems faced by computer engineers.</li>
+						<li>the style of <em>design tools</em> used by computer engineers for both hardware and software design.</li>
+					</ul>
+
+				</div>
+
+				<div class="context">
+					<p>Within this required introductory course for first-year engineering undergraduates, students must choose a "department project" in the sub-discipline of their choice (such as computer engineering). The number of students who chose the project varied from 20-60 per semester.</p>
+				</div>
+				
+			</div>
+
+			<div class="block multi-bot">
+
+				<div class="details">
+
+					<p>More specifically, you will be able to...</p>
+
+					<ul>
+						<li>recognize both <em>how</em> and <em>why</em> computer engineers use <em>abstraction</em> and <em>design hierarchy</em> in the design of hardware and software systems.</li>
+					</ul>
+
+					<p>Finally, you will have a sense of whether you would like to continue learning about computer engineering. It is meant to be fun!</p>
+				</div>
+
+				<div class="context">
+					<p>The goal is to give students who are considering this major exposure to some of the key design principles and practices early in their academic career. I structured the project around these overarching learning objectives.</p>
+				</div>
+				
+			</div>
+
+			<div class="block multi-top">
+
+				<div class="details">
+
+					<h3 class="emphasis">Prerequisites and Context</h3>
+
+					<p>The goal of this project is not to teach you how to design a microprocessor. If you continue with computer engineering, you will take at least one whole class on this! We do not expect that you will understand the whole design; we simply want to give you a sense of what it would be like to study computer engineering or computer science.</p>
+
+				</div>
+
+				<div class="context">
+					
+				</div>
+				
+			</div>
+
+			<div class="block multi-bot">
+
+				<div class="details">
+
+					<p>No background in programming is necessary, and we will be programming very close to the hardware, in machine language -- i.e. directly using 0’s and 1’s. Students who have completed the project have remarked that it is closer to CE than CS, but even if you think you want to stick to software, knowing how the underlying hardware works, and how the software is executed on that hardware, will make you a better programmer.</p>
+
+				</div>
+
+				<div class="context">
+					<p>In the first semester of teaching this project, I got student feedback that it was much closer to CE than CS (even though there is no separate CS project), so I added more context to the syllabus to preemptively explain the relationship.</p>
+				</div>
+				
+			</div>
+
+			<div class="block multi-top">
+
+				<div class="details">
+
+					<h3 class="emphasis">Assignments and Structure</h3>
+
+				</div>
+
+				<div class="context">
+					
+				</div>
+				
+			</div>
+
+			<div class="block multi-mid">
+
+				<div class="details">
+
+					<p>There are four main sections of the project, corresponding to processor components you will design and simulate. The section topics, and their corresponding components, are:</p>
+
+					<ol>
+						<li><strong>Logic:</strong> Arithmetic/Logic Unit</li>
+						<li><strong>Memory:</strong> Register File</li>
+						<li><strong>Programming:</strong> Your Program</li>
+						<li><strong>Datapath:</strong> Complete Microprocessor</li>
+					</ol>
+
+				</div>
+
+				<div class="context">
+					Increased from two sections based on student feedback from the first iteration of the project.
+				</div>
+				
+			</div>
+
+			<div class="block multi-bot">
+
+				<div class="details">
+
+					<p>For each section, there are three things to complete:</p>
+
+					<ol>
+						<li>An asynchronous module covering the content.</li>
+						<li>A synchronous session to begin designing the component within the context of individual and/or group activities.</li>
+						<li>A design report showing you have completed the component, and verified its functionality.</li>
+					</ol>
+						
+					<p>You are expected to complete the content-based asynchronous module <strong>before</strong> the corresponding synchronous session. Content will NOT be covered during the synchronous session; they are NOT lectures. The report showing your final implementation of each component will be due one week after the corresponding synchronous session.</p>
+
+				</div>
+
+				<div class="context">
+					<p>I initially covered content during the synchronous session, but for Fall 2020, I modified the project to run fully remotely. Examples of asynchronous content and synchronous classroom activities <a href="materials.html">here</a>.</p>
+				</div>
+				
+			</div>
+
+			<div class="block multi-top">
+
+				<div class="details">
+
+					<h3 class="emphasis">Timeline</h3>
+
+					<p>(subject to change)</p>
+
+				</div>
+
+				<div class="context">
+					
+				</div>
+				
+			</div>
+
+			<div class="block multi-bot">
+
+				<div class="details">
+
+					<p>Fri Feb 17: Deadline to sign up<br>Synchronous Sessions 1:30pm-3:00pm</p>
+
+					<table class="center">
+						<tr>
+							<th>Date</th>
+							<th>Asynchronous Module Due</th>
+							<th>Synchronous Session</th>
+							<th>Report Due</th>
+						</tr>
+						<tr>
+							<td>Fri Feb 17</td>
+							<td>Logic</td>
+							<td>Logic</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Fri Feb 24</td>
+							<td></td>
+							<td></td>
+							<td>ALU</td>
+						</tr>
+						<tr>
+							<td>Fri Mar 3</td>
+							<td>Memory</td>
+							<td>Memory</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Fri Mar 10</td>
+							<td></td>
+							<td></td>
+							<td>Register File</td>
+						</tr>
+						<tr>
+							<td>Fri Mar 24</td>
+							<td>Programming</td>
+							<td>Programming</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Fri Mar 31</td>
+							<td></td>
+							<td></td>
+							<td>Program</td>
+						</tr>
+						<tr>
+							<td>Fri Apr 7</td>
+							<td>Datapath</td>
+							<td>Datapath</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Fri Apr 21</td>
+							<td></td>
+							<td></td>
+							<td>Final</td>
+						</tr>
+					</table>
+
+				</div>
+
+				<div class="context">
+					<p>The project starts several weeks into the semester, so students have some time to consider which disciplinary project to join, but finishes before final exams. Each synchronous session has about 1 hour of material, but I schedule 1.5 hours to allow for flexibility.</p>
+				</div>
+				
+			</div>
+
+			<div class="block multi-top">
+
+				<div class="details">
+
+					<h3 class="emphasis">Assessment</h3>
+
+					<p>There are many intermediate deadlines, each of which is for a small section of the final project. The purpose of all these intermediate deliverables is to ensure that you are making steady progress throughout the semester. Each of these sub-project deliverables will be graded on a 1/0 basis (after all, this is a digital design project…).</p>
+					<p><strong>We will assess your final report work based on evidence of clear effort and exploration of the important concepts. Specifically, we will be looking for whether you have made use of abstraction and design hierarchy to simplify your design process, and whether you have run appropriate simulations to characterize your design.</strong> We would rather see you submit an “incomplete” project that is carefully designed and analyzed than a complete microprocessor implemented without knowing what is going on!</p>
+
+				</div>
+
+				<div class="context">
+					
+				</div>
+				
+			</div>
+
+			<div class="block multi-mid">
+
+				<div class="details">
+
+					<h4>Detailed Grading Breakdown</h4>
+
+					<table>
+						<tr>
+							<td><strong>Required:</strong> ALU Report turned in</td>
+							<td>+1</td>
+						</tr>
+						<tr>
+							<td><strong>Required:</strong> Register File Report turned in</td>
+							<td>+1</td>
+						</tr>
+						<tr>
+							<td><strong>Required:</strong> Program Report turned in</td>
+							<td>+1</td>
+						</tr>
+						<tr>
+							<td><strong>Required:</strong> Final Report turned in</td>
+							<td>+1</td>
+						</tr>
+						<tr>
+							<td><strong>Required:</strong> Attendance at 2 synchronous sessions</td>
+							<td>+1</td>
+						</tr>
+						<tr>
+							<td>Attendance at each additional session</td>
+							<td>+0.5 each</td>
+						</tr>
+						<tr>
+							<td>Final report: follows all directions</td>
+							<td>+1</td>
+						</tr>
+						<tr>
+							<td>Final report: processor contains all sub-blocks</td>
+							<td>+1</td>
+						</tr>
+						<tr>
+							<td>Final report: effort made to debug wiring issues</td>
+							<td>+1</td>
+						</tr>
+						<tr>
+							<td>Final report: demonstration of working program</td>
+							<td>+1</td>
+						</tr>
+						<tr>
+							<td><strong>Total</strong>></td>
+							<td><strong>+10</strong></td>
+						</tr>
+						<tr>
+							<td>Bonus: Extra functionality and/or very cool program</td>
+							<td>+1</td>
+						</tr>
+					</table>
+
+				</div>
+
+				<div class="context">
+					<p>Since this project is just one component of the larger Art of Engineering course, its grading (determined by the lead professor) was intended to be simple: in exceptional circumstances a student would receive a C or A+, but the vast majority of students who completed the project would get As.</p>
+
+					<p>The problem I encountered was this: what does it mean to complete the project? Does it mean the student completed every aspect of it? If not, which parts are ok to leave out, and which are essential? Thus, over time I developed a more sophisticated partial credit scheme that makes it explicit which parts of the project are absolutely required, and evaluates the final report using more measureable outcomes.</p>
+				</div>
+				
+			</div>
+
+			<div class="block multi-bot">
+
+				<div class="details">
+
+					<table>
+						<tr>
+							<th>Score</th>
+							<th>Dept. Project Grade</th>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>A+</td>
+						</tr>
+						<tr>
+							<td>7-10</td>
+							<td>A</td>
+						</tr>
+						<tr>
+							<td>5-6.5</td>
+							<td>C</td>
+						</tr>
+						<tr>
+							<td>&lt;5</td>
+							<td>No Credit</td>
+						</tr>
+					</table>
+
+					<p><strong>To get any credit for completing the department project (grade of C or higher), you must sign up by the deadline (Feb 17), turn in all 4 required reports, and attend at least 2 synchronous sessions in person.</strong></p>
+
+				</div>
+
+				<div class="context">
+					<p>I was then able to preemptively determine the relationship between detailed score and department project completion credit.</p>
+				</div>
+
+			</div>
+
+			<div class="block multi-top">
+
+				<div class="details">
+
+					<h3 class="emphasis">Instructor Support</h3>
+
+				</div>
+
+				<div class="context">
+					
+				</div>
+			</div>
+
+			<div class="block multi-bot">
+
+				<div class="details">
+
+					<p>Please do not hesitate to ask me questions on the <strong>Ed Discussion (on courseworks)</strong>; you can do so anonymously if you choose to, and your classmates will also benefit from the answers. Asking questions on the shared discussion board, where everyone can see the question and the answer, means that I don’t have to spend time answering the same question several times via email, which leads to faster response time. <strong>If you email me a question about the project, I will respond by telling you to ask your question on Ed Discussion.</strong></p>
+					
+					<p>I will have an office hour on Monday from 12pm - 1pm eastern (NYC) time. The zoom link is here.</p>
+
+				</div>
+
+				<div class="context">
+					<p>I still rarely get questions on the shared discussion board. Were I to teach this project again, I would spend time discussing with the students the expectations around instructor support. See my <a href="tstatement.html">teaching statement.</a></p>
+				</div>
+				
+			</div>
+
+			<div class="block">
+
+				<div class="details">
+
+					<h3 class="emphasis">Textbook</h3>
+
+					<p>You are NOT required to use a textbook for this project. However, if you are looking for a useful reference, check out <em>Computer Organization and Design, RISC-V Edition</em>, by Patterson and Hennessy. Not to be confused with the other computer architecture book, by Hennessy and Patterson. You do NOT need to buy this book; I assure you there are other ways of finding it.</p>
+
+				</div>
+
+				<div class="context">
+					<p>Aside from the Logisim tool itself, this book was the main resource I used when developing the project. Specifically, I followed Sections 4.1-4.4 to determine the subset of an instruction set and the datapath elements that could be easily incorporated into a single-cycle processor accessible to first-year undergraduates.</p>
+				</div>
+				
+			</div>
+			
 		</main>
 
 	</body>
