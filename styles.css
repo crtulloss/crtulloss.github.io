@@ -100,6 +100,11 @@ img {
 	max-width: 100%;
 }
 
+video {
+	margin-top: 8px;
+	max-width: 100%;
+}
+
 object {
 	margin-top: 8px;
 	max-width: 100%;

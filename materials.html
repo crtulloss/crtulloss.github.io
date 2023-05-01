@@ -28,10 +28,101 @@
 
 			<div class="text">
 
-				<h2>Sample Course Materials</h2>
+				<h2>Course Materials</h2>
 
-				<p>Stay tuned for more!</p>
+				<p>Here are some samples of asynchronous content, classroom activities, and independent design assignments from my <a href="syllabi.html">computer engineering project</a>. As discussed in my <a href="tstatement.html">teaching philosophy statement</a>, my approach is centered around building lab skills, and each artifact demonstrates the role of that class of object in the course structure: background material in the asynchronous module, scaffolding and practice during synchronous class time, and application of skills to specific engineering problems in independent design assignments.</p>
 
+				<p>Artifacts are organized in the order in which they occur in the syllabus.</p>
+
+			</div>
+
+			<div class="block multi-top">
+
+				<div class="details">
+					<h3 class="emphasis">Asynchronous Module Video: Transistor-Level Logic Gates</h3>
+				</div>
+
+				<div class="context">
+					
+				</div>
+				
+			</div>
+
+			<div class="block multi-bot">
+
+				<div class="details">
+
+					<video width="100%" controls>
+						<source src="images/logic_gate_analysis.mp4" type="video/mp4">
+						<p>Browser does not support video tag; please <a href="images/logic_gate_analysis.mp4">download instead</a>.</p>
+					</video>
+
+				</div>
+
+				<div class="context">
+					<p>This video from the project's first asynchronous module is exemplary of my approach to lecture:</p>
+
+					<ul>
+						<li>I begin with a callback to previous topics.</li>
+						<li>Using careful explanations and visual aids, and restating important points, I describe a concept or model a practice: in this case, showing a technique for anlayzing transistor-level logic gates.</li>
+						<li>Finally, I include a segue into the next part of the module, in which students are given a quiz to practice the analysis technique I just demonstrated (which also gives me evidence of the lecture's efficacy).</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<div class="block multi-top">
+
+				<div class="details">
+					<h3 class="emphasis">Asynchronous Visual Aid: Memory Metaphors</h3>
+				</div>
+
+				<div class="context">
+					
+				</div>
+				
+			</div>
+
+			<div class="block multi-bot">
+
+				<div class="details">
+
+					<img src="images/regfile_metaphor.png" alt="Comparing the register file with a table, and memory with a bookshelf." width="100%">
+
+				</div>
+
+				<div class="context">
+					<p>I initially used this sketch in an asynchronous module, and revisited it in the introduction of the corresponding synchronous lesson. The goal is to get students more familiar with abstraction, an important learning objective of this project: while both register file and memory have complicated internal details, we abstract those details away to arrive at a metaphor that models the purpose of each component. This abstract model helps to make sense of instructions like load and store, which move data between the two components, and also frames thinking about the desired functionality of the register file. Thus, I refer back to this table metaphor in the introductory paragraph of the register file design assignment (below).</p>
+				</div>
+				
+			</div>
+
+			<div class="block multi-top">
+
+				<div class="details">
+					<h3 class="emphasis">Independent Design Assignment: Register File</h3>
+				</div>
+
+				<div class="context">
+					
+				</div>
+				
+			</div>
+
+			<div class="block multi-bot">
+
+				<div class="details">
+
+					<object data="materials/Assignment_RegFile.pdf" type="application/pdf" width="100%" height="500px">
+						<p>Browser does not support PDF; please <a href="materials/Assignment_RegFile.pdf">download instead</a>.</p>
+					</object>
+
+				</div>
+
+				<div class="context">
+					<p>This is the students' second independent design assignment. With these challenges, the students are building skills producing an engineering solution based on provided specifications, within the structure of a (virtual) lab in which their tools and techniques are constrained. Having already begun thinking about the design during classroom scaffolding exercises, students generally submitted very solid drafts of the register file, and I could then provide brief feedback on areas of improvement, to be addressed before the final project submission. The register file assignment also requires the students to build a testbench for their register file circuit, which uses the concept of design hierarchy, a key learning goal for the project.</p>
+				</div>
+				
 			</div>
 
 			<div class="block multi-top">
@@ -50,12 +141,46 @@
 
 				<div class="details">
 
-					<img src="images/Collab_Doc_3.png" alt="Collaborative document for classroom breakout activity: learning to program loops in assembly language.">
+					<object data="materials/Collab_Doc_Programming.pdf" type="application/pdf" width="100%" height="500px">
+						<p>Browser does not support PDF; please <a href="materials/Collab_Doc_Programming.pdf">download instead</a>.</p>
+					</object>
 
 				</div>
 
 				<div class="context">
-					<p>TODO some description about this activity.</p>
+					<p>I designed this activity to provide scaffolding for the task of writing loops in assembly language. Students worked through this exercise in groups of up to 3 and then we discussed as a class; the structure could then be used as a model for the students to implement their own loops in the subsequent independent design assignment. Thus, I was able to observe the efficacy of this part of the lesson when evaluating students' independent work. The activity also builds familiarity with levels of abstraction in programming, one of the key learning objectives of the project as a whole.</p>
+				</div>
+				
+			</div>
+
+			<div class="block multi-top">
+
+				<div class="details">
+					<h3 class="emphasis">Project-Specific Instruction Set Architecture</h3>
+				</div>
+
+				<div class="context">
+					
+				</div>
+				
+			</div>
+
+			<div class="block multi-bot">
+
+				<div class="details">
+
+					<object data="materials/AoE_ISA.pdf" type="application/pdf" width="100%" height="500px">
+						<p>Browser does not support PDF; please <a href="materials/AoE_ISA.pdf">download instead</a>.</p>
+					</object>
+
+				</div>
+
+				<div class="context">
+					<p>I've also included an example of a syllabus-level choice I made: to create a custom instruction set architecture that is accesible to first-year students and only includes those features relevant to the learning goals of this project.</p>
+
+					<p>Although I considered using RISC-V, I ultimately decided to make my own ISA tailored to the specific needs of the project. Thus, students could learn to identify the role of opcodes, immediates, and register addresses, without getting confused about details of a real ISA that may or may not be relevant to this project. The simplified opcodes also make for more straightforward control logic, again allowing the students to build the relevant skills without spending time to learn a real ISA (which is not a learning objective of this first-year project).</p>
+
+					<p>This document provides both the ISA specification, and notes & examples to help the students learn how to interpret the specification.</p>
 				</div>
 				
 			</div>
